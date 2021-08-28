@@ -489,6 +489,7 @@ header .container .header ul li a:hover {
 .testimonial .container {
     text-align: center;
     position: relative;
+    overflow: hidden;
 }
 .testimonial .container h2 {
     margin-bottom: 50px;
@@ -504,6 +505,21 @@ header .container .header ul li a:hover {
     width: 80%;
     margin: 0 auto;
     position: relative;
+    animation-name: transform;
+    animation-duration: 1s;
+    animation-delay: 20s;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+
+}
+@keyframes transform {
+    to{
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+}
 }
 .testimonial .container i {
     background-color: white;
