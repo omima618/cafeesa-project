@@ -74,6 +74,7 @@ h3 {
     display: block;
     width: fit-content;
     padding: 10px 40px;
+    border: 1px solid transparent;
     background-color: var(--secondry-color);
     color: white;
     font-size: 20px;
@@ -86,8 +87,9 @@ h3 {
     -o-border-radius: 5px;
 }
 .button:hover {
+    padding: 10px 40px;
     background-color: transparent;
-    border: 1px solid var(--secondry-color);
+    border-color: var(--secondry-color);
     color: var(--secondry-color);
 }
 /* end of component */
@@ -316,11 +318,12 @@ h3 {
     .about-us .container {
         flex-direction: column-reverse;
         align-items: center;
+        justify-content: space-between;
     }
     .about-us .container .about {
         margin-left: 0;
         width: 100%;
-        padding-top: 30px;
+        margin-bottom: 70px;
     }
 }
 @media (max-width: 768px) {
@@ -509,16 +512,15 @@ header .container .header ul li a:hover {
     animation-delay: 20s;
     animation-timing-function: ease-in-out;
     animation-direction: reverse;
-
 }
 @keyframes transform {
-    to{
+    to {
         transform: translateX(100%);
         -webkit-transform: translateX(100%);
         -moz-transform: translateX(100%);
         -ms-transform: translateX(100%);
         -o-transform: translateX(100%);
-}
+    }
 }
 .testimonial .container i {
     background-color: white;
